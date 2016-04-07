@@ -1,17 +1,6 @@
 spring:
   application:
     name: zuulserver
-  cloud:
-    consul:
-      enabled: true
-      config:
-        enabled: true
-      discovery:
-        preferIpAddress: true
-        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
-ribbon:
-  eureka:
-   enabled: false
 
 
